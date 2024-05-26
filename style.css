@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: 'Roboto' , sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: #c4c4c4;
+    font-size: 14px;
+    line-height: 20px;
+}
+.resume{
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px;
+}
+.resume .resume_left{
+    width: 35%;
+    background: #26252d;
+}
+.resume .resume_left .image{
+    width: 35%;
+}
+.resume .resume_left .image img{
+    width: 272px;
+    /* width: 100%; */
+    display: block;
+}
+.resume .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.resume .resume_left .info{
+    color: #84838b;
+}
+
+.resume .resume_left .bottom{
+	padding: 20px 30px;
+}
+
+.resume .item{
+	padding: 20px 0;
+	border-bottom: 1px solid #0175b2;
+}
+
+.resume .item:last-child{
+    border-bottom: 0px;
+}
+.resume .resume_left .namerole{
+    display: none;
+}
+.resume .namerole .name{
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+.resume .resume_left .namerole .role{
+	color: #84838b;
+}
+.resume .resume_left .contact .info:last-child{
+    margin-top: 10px;
+}
+
+.resume .resume_left .contact .subtitle{
+   color: #fff;
+   margin-bottom: 2px;
+}
+
+.resume .resume_left .skills .skills_list{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 5px;
+}
+
+.resume .resume_left .skills .skills_list .skills_bar p{
+   position: relative;
+   width: 125px;
+   height: 20px;
+   background: #fff;
+}
+
+.resume .resume_left .skills .skills_list .skills_bar p span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #0175b2;
+	width: 100%;
+	height: 100%;
+}
+
+.resume .resume_right{
+	width: 65%;
+	padding: 20px 40px;
+	color: #26252d;
+}
+
+.resume .resume_right .namerole .name{
+	color: #26252d;
+	font-size: 32px;
+}
+
+.resume .resume_right .namerole .role{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.resume .resume_right .item .title{
+	color: #26252d;
+}
+
+.resume .resume_right .data{
+	display: flex;
+}
+
+.resume .resume_right .data .year{
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+
+.resume .resume_right .data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.resume .resume_right .data .year:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 1px solid #26252d;
+	border-radius: 100%;
+}
+
+.resume .resume_right .data .year:after{
+	content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #0175b2;
+}
+
+.resume .resume_right .data:last-child .year:after{
+	display: none;
+}
+
+.resume .resume_right .resume_interests .info{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.resume .resume_right .resume_interests .interests .int_icon {
+    font-size: 25px;
+	color: #0175b2;
+	margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+	.resume .resume_right .namerole{
+		display: none;
+	}
+	.resume .resume_left .namerole{
+		display: block;
+	}
+	.resume{
+		width: 95%;
+		margin: 10px auto;
+		flex-direction: column;
+	}
+	.resume .resume_left,
+	.resume .resume_right{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 424px){
+	.resume .resume_right{
+		padding: 20px 30px;
+	}
+	.resume .resume_right .data{
+		flex-direction: column;
+	}
+	.resume .resume_right .data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #0175b2;
+	}
+	.resume .resume_right .data .year:before,
+	.resume .resume_right .data .year:after{
+		display: none;
+	}
+	.resume .resume_right .data .content{
+		width: 100%;
+		padding: 0;
+	}
+	.resume .resume_right .resume_interests .interests .int_icon{
+		font-size: 24px;
+	}
+}
+
+
